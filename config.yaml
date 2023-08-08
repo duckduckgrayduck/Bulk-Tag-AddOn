@@ -8,11 +8,14 @@ properties:
   key:
     title: Key 
     type: string
-    description: Use _tag if you want to add just a normal tag. Otherwise provide the name of your key. 
+    description: Use _tag if you want to add a normal tag. Otherwise provide the name of your key. 
     default: tag
   value:
     title: Value
     type: string
+required:
+  - key
+  - value 
 # Categories are what type of Add-On this is. Used to sort the Add-On in the Add-On menu. 
 categories: 
   - bulk
