@@ -8,7 +8,7 @@ properties:
   key:
     title: Key 
     type: string
-    description: If you want to add a key/value pair, replace tag with the name of your key. Otherwise the Add-On will add value as a tag.
+    description: Use _tag if you want to add just a normal tag. Otherwise provide the name of your key. 
     default: tag
   value:
     title: Value
