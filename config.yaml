@@ -5,8 +5,13 @@ documents:
   - query
   - selected
 properties:
-  name:
-    title: Name
+  key:
+    title: Key 
+    type: string
+    description: If you want to add a key/value pair, replace tag with the name of your key. Otherwise the Add-On will add value as a tag.
+    default: tag
+  value:
+    title: Value
     type: string
 # Categories are what type of Add-On this is. Used to sort the Add-On in the Add-On menu. 
 categories: 
