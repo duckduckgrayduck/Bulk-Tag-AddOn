@@ -9,7 +9,7 @@ properties:
     title: Key 
     type: string
     description: Use _tag if you want to add a normal tag. Otherwise provide the name of your key. 
-    default: tag
+    default: _tag
   value:
     title: Value
     type: string
