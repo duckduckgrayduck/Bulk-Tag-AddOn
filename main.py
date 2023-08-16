@@ -10,8 +10,8 @@ class BulkTag(AddOn):
     def main(self):
         """The main add-on functionality goes here."""
         # fetch your add-on specific data
-        key = self.data.get("key")
-        value = self.data.get("value")
+        key = self.data.get("key").strip()
+        value = self.data.get("value").strip()
     
         for document in self.get_documents():
             if key in document.data:
