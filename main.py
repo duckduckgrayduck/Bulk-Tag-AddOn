@@ -14,8 +14,12 @@ class BulkTag(AddOn):
         value = self.data.get("value")
     
         for document in self.get_documents():
-            document.data[key].append(value)
-            document.save()
+            if document.data[key]:
+                document.data[key].append(value)
+                document.save()
+            else:
+                document.data[key] = value
+                document.save()
 
 
 if __name__ == "__main__":
